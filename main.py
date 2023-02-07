@@ -23,6 +23,11 @@ returns_ticker_p, df_pasiva = fn.rend_p(prices,cap_shares_p,cash_w)
 
 rf=.1106
 
+<<<<<<< refs/remotes/afloresfdz/main
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> Revert "Correciones de sharpe wu!"
 weights = fn.sharpe(prices,rf)
 
 cap_shares_a = fn.shares_active(weights, prices, cash_w, '20210129')
@@ -36,4 +41,15 @@ comission_rate = 0.00125
 comission_monthly = fn.comission(comission_rate,prices,shares_rebal_a)
 
 df_operaciones = fn.operations(shares_rebal_a,comission_rate,prices,comission_monthly)
+<<<<<<< refs/remotes/afloresfdz/main
+=======
+=======
+Pesos=pd.DataFrame(data={'Tickers':prices.index,'Weights': fn.sharpe(prices_daily,rf).round(13)}) 
+=======
+Pesos=pd.DataFrame(data={'Tickers':prices.index,'Weights': fn.sharpe(prices,rf).round(13)}) 
+>>>>>>> parent of 9ab1d59... Correciones de sharpe wu!
+Pesos = Pesos[Pesos['Weights'] != 0]
+print(Pesos)
+>>>>>>> main
+>>>>>>> Revert "Correciones de sharpe wu!"
 
