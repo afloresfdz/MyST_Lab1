@@ -22,7 +22,9 @@ cap_shares_p = fn.shares_passive(all_files,prices,cash_w,'20210129')
 returns_ticker_p, df_pasiva = fn.rend_p(prices,cap_shares_p,cash_w)
 
 rf=.1106
+prices_daily = fn.import_prices_d(common_tickers,'2021-01-31','2022-01-31')
 
+<<<<<<< HEAD
 weights = fn.sharpe(prices,rf)
 
 cap_shares_a = fn.shares_active(weights, prices, cash_w, '20210129')
@@ -36,4 +38,9 @@ comission_rate = 0.00125
 comission_monthly = fn.comission(comission_rate,prices,shares_rebal_a)
 
 df_operaciones = fn.operations(shares_rebal_a,comission_rate,prices,comission_monthly)
+=======
+Pesos=pd.DataFrame(data={'Tickers':prices.index,'Weights': fn.sharpe(prices_daily,rf).round(13)}) 
+Pesos = Pesos[Pesos['Weights'] != 0]
+print(Pesos)
+>>>>>>> andrea
 
