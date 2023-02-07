@@ -23,11 +23,14 @@ returns_ticker_p, df_pasiva = fn.rend_p(prices,cap_shares_p,cash_w)
 
 rf=.1106
 
+<<<<<<< andrea
 <<<<<<< refs/remotes/afloresfdz/main
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> Revert "Correciones de sharpe wu!"
+=======
+>>>>>>> Final changes operations and active investment
 weights = fn.sharpe(prices,rf)
 
 cap_shares_a = fn.shares_active(weights, prices, cash_w, '20210129')
@@ -41,6 +44,7 @@ comission_rate = 0.00125
 comission_monthly = fn.comission(comission_rate,prices,shares_rebal_a)
 
 df_operaciones = fn.operations(shares_rebal_a,comission_rate,prices,comission_monthly)
+<<<<<<< andrea
 <<<<<<< refs/remotes/afloresfdz/main
 =======
 =======
@@ -52,4 +56,6 @@ Pesos = Pesos[Pesos['Weights'] != 0]
 print(Pesos)
 >>>>>>> main
 >>>>>>> Revert "Correciones de sharpe wu!"
+=======
+>>>>>>> Final changes operations and active investment
 
