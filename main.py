@@ -28,9 +28,13 @@ rf=.1106
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< andrea
 >>>>>>> Revert "Correciones de sharpe wu!"
 =======
 >>>>>>> Final changes operations and active investment
+=======
+<<<<<<< HEAD
+>>>>>>> Revert "Correciones de sharpe wu!"
 weights = fn.sharpe(prices,rf)
 
 cap_shares_a = fn.shares_active(weights, prices, cash_w, '20210129')
