@@ -25,6 +25,9 @@ rf=.1106
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> andrea
 weights = fn.sharpe(prices,rf)
 
 cap_shares_a = fn.shares_active(weights, prices, cash_w, '20210129')
@@ -45,5 +48,9 @@ Pesos=pd.DataFrame(data={'Tickers':prices.index,'Weights': fn.sharpe(prices,rf).
 >>>>>>> parent of 9ab1d59... Correciones de sharpe wu!
 Pesos = Pesos[Pesos['Weights'] != 0]
 print(Pesos)
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> andrea
+>>>>>>> andrea
 
