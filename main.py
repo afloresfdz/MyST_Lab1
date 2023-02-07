@@ -21,9 +21,8 @@ returns_ticker, returns_monthly = fn.rend(prices,cap_shares,cash_w)
 print(returns_monthly)
 
 rf=.1106
-prices_daily = fn.import_prices_d(common_tickers,'2021-01-31','2022-01-31')
 
-Pesos=pd.DataFrame(data={'Tickers':prices.index,'Weights': fn.sharpe(prices_daily,rf).round(13)}) 
+Pesos=pd.DataFrame(data={'Tickers':prices.index,'Weights': fn.sharpe(prices,rf).round(13)}) 
 Pesos = Pesos[Pesos['Weights'] != 0]
 print(Pesos)
 
